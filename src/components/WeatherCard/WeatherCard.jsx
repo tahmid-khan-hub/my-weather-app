@@ -27,36 +27,37 @@ const WeatherCard = ({weatherData}) => {
     
     console.log(Weather);
 
-    const {name} = Weather;
-    const degree = Weather.wind.deg;
+    // const {name} = Weather;
+    const degree = Weather.ProvinceOfTurin.wind.deg;
+    // console.log(degree);
     // const rain = Weather.rain;
     
 
     return (
         <div className='card'>
-            <h1 id='title'>{name}, {Weather.sys.country}</h1>
+            <h1 id='title'>{Weather.ProvinceOfTurin.name}, {Weather.ProvinceOfTurin.sys.country}</h1>
 
 
             <div className='temperature-container'>
-                <img src={Weather.weather[0].icon} alt="" />
+                <img src={Weather.ProvinceOfTurin.weather.icon} alt="" />
                 
                 <div >
-                    <p className='temperature'>{Weather.weather[0].description}</p>
-                    <p id='temp' className='temperature'>{Weather.main.temp}°C</p>
+                    <p className='temperature'>{Weather.ProvinceOfTurin.weather.description}</p>
+                    <p id='temp' className='temperature'>{Weather.ProvinceOfTurin.main.temp}°C</p>
                 </div>
 
             </div>
 
             <div className='weather-details'>
-                <p>Wind: {Weather.wind.speed}m/s, {findDirection(degree)}</p>
-                <p>Rain (last ): {Weather.rain["1h"]}mm</p>
-                <p>Humidity: {Weather.main.humidity}%</p>
-                <p>Pressure: {Weather.main.pressure} hPa</p>
+                <p>Wind: {Weather.ProvinceOfTurin.wind.speed}m/s, {findDirection(degree)}</p>
+                <p>Rain (last ): {Weather.ProvinceOfTurin.rain["1h"]}mm</p>
+                <p>Humidity: {Weather.ProvinceOfTurin.main.humidity}%</p>
+                <p>Pressure: {Weather.ProvinceOfTurin.main.pressure} hPa</p>
             </div>
 
             <div className='sun-container'>
-                <p>Sunrise: {convertUnixToTime(Weather.sys.sunrise)}</p>
-                <p>Sunset: {convertUnixToTime(Weather.sys.sunset)}</p>
+                <p>Sunrise: {convertUnixToTime(Weather.ProvinceOfTurin.sys.sunrise)}</p>
+                <p>Sunset: {convertUnixToTime(Weather.ProvinceOfTurin.sys.sunset)}</p>
             </div>
 
         </div>

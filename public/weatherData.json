@@ -1,51 +1,213 @@
-                          
 {
-    "coord": {
-       "lon": 7.367,
-       "lat": 45.133
-    },
-    "weather": [
-       {
-          "id": 501,
-          "main": "Rain",
-          "description": "moderate rain",
-          "icon": "http://openweathermap.org/img/wn/10d.png"
-       }
-    ],
-    "base": "stations",
-    "main": {
-       "temp": 284.2,
-       "feels_like": 282.93,
-       "temp_min": 283.06,
-       "temp_max": 286.82,
-       "pressure": 1021,
-       "humidity": 60,
-       "sea_level": 1021,
-       "grnd_level": 910
-    },
-    "visibility": 10000,
-    "wind": {
-       "speed": 4.09,
-       "deg": 121,
-       "gust": 3.47
-    },
-    "rain": {
-       "1h": 2.73
-    },
-    "clouds": {
-       "all": 83
-    },
-    "dt": 1726660758,
-    "sys": {
-       "type": 1,
-       "id": 6736,
-       "country": "IT",
-       "sunrise": 1726636384,
-       "sunset": 1726680975
-    },
-    "timezone": 7200,
-    "id": 3165523,
-    "name": "Province of Turin",
-    "cod": 200
- }                    
-                         
+   "ProvinceOfTurin": {
+       "coord": {
+           "lon": 7.367,
+           "lat": 45.133
+       },
+       "weather": {
+           "id": 501,
+           "main": "Rain",
+           "description": "moderate rain",
+           "icon": "https://openweathermap.org/img/wn/10d@2x.png"
+       },
+       "base": "stations",
+       "main": {
+           "temp": 284.2,
+           "feels_like": 282.93,
+           "temp_min": 283.06,
+           "temp_max": 286.82,
+           "pressure": 1021,
+           "humidity": 60
+       },
+       "visibility": 10000,
+       "wind": {
+           "speed": 4.09,
+           "deg": 121
+       },
+       "clouds": {
+           "all": 83
+       },
+       "rain": {
+           "1h": 2.73
+       },
+       "dt": 1726660758,
+       "sys": {
+           "type": 1,
+           "id": 6736,
+           "country": "IT",
+           "sunrise": 1726636384,
+           "sunset": 1726680975
+       },
+       "timezone": 7200,
+       "id": 3165523,
+       "name": "Province of Turin",
+       "cod": 200
+   },
+   "New York": {
+       "coord": {
+           "lon": -74.006,
+           "lat": 40.7128
+       },
+       "weather": {
+           "id": 800,
+           "main": "Clear",
+           "description": "clear sky",
+           "icon": "https://openweathermap.org/img/wn/01d@2x.png"
+       },
+       "base": "stations",
+       "main": {
+           "temp": 293.15,
+           "feels_like": 292.67,
+           "temp_min": 292.04,
+           "temp_max": 294.26,
+           "pressure": 1015,
+           "humidity": 55
+       },
+       "visibility": 10000,
+       "wind": {
+           "speed": 3.5,
+           "deg": 220
+       },
+       "clouds": {
+           "all": 5
+       },
+       "dt": 1726660800,
+       "sys": {
+           "type": 1,
+           "id": 5128581,
+           "country": "US",
+           "sunrise": 1726640023,
+           "sunset": 1726687321
+       },
+       "timezone": -14400,
+       "id": 5128581,
+       "name": "New York",
+       "cod": 200
+   },
+   "Tokyo": {
+       "coord": {
+           "lon": 139.6917,
+           "lat": 35.6895
+       },
+       "weather": {
+           "id": 802,
+           "main": "Clouds",
+           "description": "scattered clouds",
+           "icon": "https://openweathermap.org/img/wn/03d@2x.png"
+       },
+       "base": "stations",
+       "main": {
+           "temp": 298.45,
+           "feels_like": 299.2,
+           "temp_min": 297.32,
+           "temp_max": 299.98,
+           "pressure": 1012,
+           "humidity": 70
+       },
+       "visibility": 10000,
+       "wind": {
+           "speed": 2.8,
+           "deg": 180
+       },
+       "clouds": {
+           "all": 40
+       },
+       "dt": 1726660850,
+       "sys": {
+           "type": 1,
+           "id": 1850147,
+           "country": "JP",
+           "sunrise": 1726619857,
+           "sunset": 1726666415
+       },
+       "timezone": 32400,
+       "id": 1850147,
+       "name": "Tokyo",
+       "cod": 200
+   },
+   "London": {
+       "coord": {
+           "lon": -0.1278,
+           "lat": 51.5074
+       },
+       "weather": {
+           "id": 803,
+           "main": "Clouds",
+           "description": "broken clouds",
+           "icon": "https://openweathermap.org/img/wn/04d@2x.png"
+       },
+       "base": "stations",
+       "main": {
+           "temp": 288.6,
+           "feels_like": 287.2,
+           "temp_min": 286.5,
+           "temp_max": 290.1,
+           "pressure": 1018,
+           "humidity": 65
+       },
+       "visibility": 10000,
+       "wind": {
+           "speed": 4.2,
+           "deg": 210
+       },
+       "clouds": {
+           "all": 75
+       },
+       "dt": 1726660900,
+       "sys": {
+           "type": 1,
+           "id": 2643743,
+           "country": "GB",
+           "sunrise": 1726632552,
+           "sunset": 1726678443
+       },
+       "timezone": 3600,
+       "id": 2643743,
+       "name": "London",
+       "cod": 200
+   },
+   "Sydney": {
+       "coord": {
+           "lon": 151.2093,
+           "lat": -33.8688
+       },
+       "weather": {
+           "id": 500,
+           "main": "Rain",
+           "description": "light rain",
+           "icon": "https://openweathermap.org/img/wn/10d@2x.png"
+       },
+       "base": "stations",
+       "main": {
+           "temp": 295.15,
+           "feels_like": 296.1,
+           "temp_min": 294.1,
+           "temp_max": 296.5,
+           "pressure": 1013,
+           "humidity": 72
+       },
+       "visibility": 10000,
+       "wind": {
+           "speed": 3.0,
+           "deg": 150
+       },
+       "clouds": {
+           "all": 60
+       },
+       "rain": {
+           "1h": 1.2
+       },
+       "dt": 1726660950,
+       "sys": {
+           "type": 1,
+           "id": 2147714,
+           "country": "AU",
+           "sunrise": 1726603280,
+           "sunset": 1726645624
+       },
+       "timezone": 36000,
+       "id": 2147714,
+       "name": "Sydney",
+       "cod": 200
+   }
+}
