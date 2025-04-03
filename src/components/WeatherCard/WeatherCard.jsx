@@ -47,10 +47,12 @@ const WeatherCard = ({weatherData}) => {
 
             </div>
 
-            <p className='weather-details'>Wind: {Weather.wind.speed}m/s, {findDirection(degree)}</p>
-            <p className='weather-details'>Rain (last ): {Weather.rain["1h"]}mm</p>
-            <p className='weather-details'>Humidity: {Weather.main.humidity}%</p>
-            <p className='weather-details'>Pressure: {Weather.main.pressure} hPa</p>
+            <div className='weather-details'>
+                <p>Wind: {Weather.wind.speed}m/s, {findDirection(degree)}</p>
+                <p>Rain (last ): {Weather.rain["1h"]}mm</p>
+                <p>Humidity: {Weather.main.humidity}%</p>
+                <p>Pressure: {Weather.main.pressure} hPa</p>
+            </div>
 
             <div className='sun-container'>
                 <p>Sunrise: {convertUnixToTime(Weather.sys.sunrise)}</p>
