@@ -9,7 +9,7 @@
           "id": 501,
           "main": "Rain",
           "description": "moderate rain",
-          "icon": "10d"
+          "icon": "http://openweathermap.org/img/wn/10d.png"
        }
     ],
     "base": "stations",
